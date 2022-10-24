@@ -2,14 +2,32 @@
 <html>
 <head>
     <meta charset='utf-8'>
-    <title>volax.fr - Main Page</title>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='assets/style.css'>
+    <title>Volax.fr - Main page</title>
+
+    <link rel="icon" type="image/png" href="assets/logo.png" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel='stylesheet' href='style.css'>
+
+    <script src='scripts/index.js'></script>
 </head>
 <body>
     <div class="container">
-        <h1>Test</h1>
+        <img class="hide-at-start" src="assets/volax.png" width="200px" height="200px">
+        <br>
+        <h1 class="typing1">Welcome to my developer world<br>I'm Florent also known as Volax.</h1>
+        <div>
+            <i class="hide-at-start icon fa-brands fa-github fa-2x" onclick='redirect("https://github.com/VolaxYT", true)'></i>
+            <i class="hide-at-start icon fa-brands fa-youtube fa-2x" onclick='redirect("https://www.youtube.com/c/Volax", true)'></i>
+            <i class="hide-at-start icon fa-brands fa-discord fa-2x" onclick='redirect("https://discord.gg/3anxCKb", true)'></i>
+            <i class="hide-at-start icon fa-brands fa-twitter fa-2x" onclick='redirect("https://twitter.com/VolaxOff", true)'></i>
+            <i class="hide-at-start icon fa-brands fa-paypal fa-2x" onclick='redirect("https://www.paypal.com/paypalme/volaxdon", true)'></i>
+        </div>
+        <br>
+        <br>
+        <div class="pages">
+            <p class="hide-at-start" onclick="redirect('./projects.html')">./my-projects</p>
+            <p class="hide-at-start" onclick="redirect('./aboutme.html')">./about-me</p>
+        </div>
     </div>
-    <script src='main.js'></script>
 </body>
 </html>
